@@ -13,9 +13,8 @@ $grayishblue: hsl(210, 4%, 67%);
 $white: hsl(0, 0%, 100%);
 $smoothgreen: #90D4C6;
 
-$mobilesize: '400px';
-$tabletsize: '1100px';
-$pcsize: '1439px';
+$mobilesize: '480px';
+$tabletsize: '1024px';
 
 @mixin mq-maxwidth($screensize) {
     @media (max-width:$screensize) {
@@ -137,7 +136,7 @@ html {
         align-items: center;
         margin-top: 34px;
         margin-left: 30px;
-        width: 95%;
+        width: 90%;
         height: 56px;
         justify-content: space-between;
         font-family: 'Barlow', sans-serif;
@@ -165,6 +164,9 @@ html {
 
             &__selector {
                 margin-right: 47px;
+                @include mq-maxwidth($mobilesize) {
+                    display: none;
+                }
             }
 
             &__button {
@@ -178,6 +180,17 @@ html {
                 background-color: $white;
                 border-radius: 28px;
 
+                @include mq-maxwidth($mobilesize) {
+                    background-color: transparent;
+                    background-image: url('icons/icon-hamburger.svg');
+                    width: 24px;
+                    height: 18px;
+                    border-radius: 0%;
+                    margin-left: 85%;
+                    position: absolute;
+                    z-index: 1;
+                }
+
                 &__txt {
                     color: $verydarkgrayishblue;
                     font-weight: bolder;
@@ -185,6 +198,10 @@ html {
                     font-size: 15px;
                     text-transform: uppercase;
                     padding: 5px;
+
+                    @include mq-maxwidth($mobilesize) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -198,6 +215,10 @@ html {
         background-size: cover;
         background-position: center;
         justify-content: center;
+
+        @include mq-maxwidth($mobilesize) {
+            height: 538px;
+        }
 
         &__title {
             max-height: 69px;
@@ -213,6 +234,13 @@ html {
             letter-spacing: 8.75px;
             margin-left: auto;
             margin-right: auto;
+
+            @include mq-maxwidth($mobilesize) {
+                max-height: none;
+                margin-top: 144px;
+                width: auto;
+                font-size: 40px;
+            }
         }
 
         &__arrow {
@@ -226,6 +254,10 @@ html {
             background-position: center;
             margin-top: 360.54px;
             position: absolute;
+
+            @include mq-maxwidth($mobilesize) {
+                margin-top: 294px;
+            }
         }
     }
 
@@ -236,6 +268,10 @@ html {
         flex-wrap: wrap;
         flex: 1;
 
+        @include mq-maxwidth($mobilesize) {
+            flex-direction: column;
+        }
+
         &__egg {
             height: 600px;
             width: 50%;
@@ -243,6 +279,11 @@ html {
             background-image: url('photos/image-transform.jpg');
             background-size: cover;
             background-position: center;
+
+            @include mq-maxwidth($mobilesize) {
+                height: 312px;
+                width: 100%;
+            }
         }
 
         &__texta {
@@ -250,6 +291,13 @@ html {
             width: 42%;
             margin-left: 5%;
             margin-right: 3%;
+
+            @include mq-maxwidth($mobilesize) {
+                margin-top: 10%;
+                width: 84%;
+                margin-left: 10%;
+                margin-right: 6%;
+            }
             
 
             &__title {
@@ -385,7 +433,6 @@ html {
 
     &__client {
     display: flex;
-    max-width: 1275px;
     width: 100%;
     height: 457px;
     flex-shrink: 0;
