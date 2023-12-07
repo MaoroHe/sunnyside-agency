@@ -13,7 +13,7 @@ $grayishblue: hsl(210, 4%, 67%);
 $white: hsl(0, 0%, 100%);
 $smoothgreen: #90D4C6;
 
-$mobilesize: '480px';
+$mobilesize: '560px';
 $tabletsize: '1024px';
 
 @mixin mq-maxwidth($screensize) {
@@ -75,6 +75,10 @@ $tabletsize: '1024px';
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+
+    @include mq-maxwidth($mobilesize) {
+        width: 80%;
+    }
 }
 
 @mixin textimonial {
@@ -107,6 +111,11 @@ $tabletsize: '1024px';
     background-size: cover;
     margin: 0;
     background-position: center;
+
+    @include mq-maxwidth($mobilesize) {
+        width: 50%;
+        height: 188px;
+    }
 }
 
 //font-family: 'Barlow', sans-serif;
@@ -282,6 +291,7 @@ html {
 
             @include mq-maxwidth($mobilesize) {
                 height: 312px;
+                order: -1;
                 width: 100%;
             }
         }
@@ -295,6 +305,7 @@ html {
             @include mq-maxwidth($mobilesize) {
                 margin-top: 10%;
                 width: 84%;
+                margin-bottom: 10%;
                 margin-left: 10%;
                 margin-right: 6%;
             }
@@ -345,6 +356,12 @@ html {
             background-image: url('photos/image-stand-out.jpg');
             background-size: cover;
             float: left;
+
+            @include mq-maxwidth($mobilesize) {
+                height: 312px;
+                order: -1;
+                width: 100%;
+            }
         }
 
         &__textb {
@@ -352,6 +369,14 @@ html {
             width: 42%;
             margin-left: 5%;
             margin-right: 3%;
+
+            @include mq-maxwidth($mobilesize) {
+                margin-top: 10%;
+                width: 84%;
+                margin-bottom: 10%;
+                margin-left: 10%;
+                margin-right: 6%;
+            }
             
 
             &__title {
@@ -375,7 +400,6 @@ html {
 
                 &__p {
                     @include learnstyle();
-                    
                     margin-top: -13px;
                 }
             }
@@ -398,6 +422,10 @@ html {
                 background-image: url('photos/image-graphic-design.jpg');
                 background-size: cover;
                 background-position: center;
+
+                @include mq-maxwidth($mobilesize) {
+                    width: 100%;
+                }
             }
 
             &--second {
@@ -407,6 +435,10 @@ html {
                 background-size: cover;
                 background-position: center;
                 background-image: url('photos/image-photography.jpg');
+
+                @include mq-maxwidth($mobilesize) {
+                    width: 100%;
+                }
             }
 
             &__title1 {
@@ -443,6 +475,13 @@ html {
     margin-right: auto;
     margin-top: 160px;
     margin-bottom: 160px;
+
+    @include mq-maxwidth($mobilesize) {
+        height: 1108px;
+        flex-wrap: wrap;
+        margin-bottom: 200px;
+        margin-top: 200px;
+    }
        
         &__title {
             position: absolute;
@@ -454,6 +493,10 @@ html {
             letter-spacing: 5px;
             text-transform: uppercase;
             color: $darkgrayishblue;
+
+            @include mq-maxwidth($mobilesize) {
+                margin-bottom: 1040px;
+            }
         }
 
         &__pres {
@@ -462,6 +505,12 @@ html {
             max-width: 350px;
             width: 100%;
             height: 345px;
+
+            @include mq-maxwidth($mobilesize) {
+                max-width: none;
+                width: 85%;
+                height: 220px;
+            }
 
             &__picture {
                 @include pfpstyle(); 
@@ -506,6 +555,12 @@ html {
         grid-template-rows: 450px 350px;
         width: 100%;
         height: fit-content;
+
+        @include mq-maxwidth($mobilesize) {
+            display: flex;
+            flex-wrap: wrap;
+            height: 751px;
+        }
         
         &__img {
             @include footerimg();
@@ -536,6 +591,11 @@ html {
             grid-row: 2;
             align-items: center;
             flex-direction: column;
+
+            @include mq-maxwidth($mobilesize) {
+                width: 100%;
+                height: 375px;
+            }
 
             &__title {
                 max-width: 170px;
@@ -579,6 +639,10 @@ html {
 
 .container__nav__contain__button:hover {
     background-color: rgba(255,255,255, 0.2537);
+
+    @include mq-maxwidth($mobilesize) {
+        background-color: transparent;
+    }
     
 
     .container__nav__contain__button__txt {

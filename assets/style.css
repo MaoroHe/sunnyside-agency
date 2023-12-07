@@ -38,7 +38,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .container__nav__logo {
     max-width: 124px;
     max-height: 24px;
@@ -52,7 +52,7 @@ html {
 .container__nav__contain__selector {
   margin-right: 47px;
 }
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .container__nav__contain__selector {
     display: none;
   }
@@ -68,7 +68,7 @@ html {
   background-color: hsl(0, 0%, 100%);
   border-radius: 28px;
 }
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .container__nav__contain__button {
     background-color: transparent;
     background-image: url("icons/icon-hamburger.svg");
@@ -88,7 +88,7 @@ html {
   text-transform: uppercase;
   padding: 5px;
 }
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .container__nav__contain__button__txt {
     display: none;
   }
@@ -103,7 +103,7 @@ html {
   background-position: center;
   justify-content: center;
 }
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .container__header {
     height: 538px;
   }
@@ -123,7 +123,7 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .container__header__title {
     max-height: none;
     margin-top: 144px;
@@ -143,7 +143,7 @@ html {
   margin-top: 360.54px;
   position: absolute;
 }
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .container__header__arrow {
     margin-top: 294px;
   }
@@ -156,7 +156,7 @@ html {
   flex-wrap: wrap;
   flex: 1;
 }
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .container__box {
     flex-direction: column;
   }
@@ -169,9 +169,10 @@ html {
   background-size: cover;
   background-position: center;
 }
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .container__box__egg {
     height: 312px;
+    order: -1;
     width: 100%;
   }
 }
@@ -181,10 +182,11 @@ html {
   margin-left: 5%;
   margin-right: 3%;
 }
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .container__box__texta {
     margin-top: 10%;
     width: 84%;
+    margin-bottom: 10%;
     margin-left: 10%;
     margin-right: 6%;
   }
@@ -244,11 +246,27 @@ html {
   background-size: cover;
   float: left;
 }
+@media (max-width: 560px) {
+  .container__boxe__glass {
+    height: 312px;
+    order: -1;
+    width: 100%;
+  }
+}
 .container__boxe__textb {
   margin-top: 5%;
   width: 42%;
   margin-left: 5%;
   margin-right: 3%;
+}
+@media (max-width: 560px) {
+  .container__boxe__textb {
+    margin-top: 10%;
+    width: 84%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 6%;
+  }
 }
 .container__boxe__textb__title {
   color: hsl(212, 27%, 19%);
@@ -304,6 +322,11 @@ html {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 560px) {
+  .container__box2__choice--first {
+    width: 100%;
+  }
+}
 .container__box2__choice--second {
   float: right;
   width: 50%;
@@ -311,6 +334,11 @@ html {
   background-size: cover;
   background-position: center;
   background-image: url("photos/image-photography.jpg");
+}
+@media (max-width: 560px) {
+  .container__box2__choice--second {
+    width: 100%;
+  }
 }
 .container__box2__choice__title1 {
   font-family: "Fraunces", serif;
@@ -342,6 +370,11 @@ html {
   margin-right: auto;
   color: hsl(168, 34%, 41%);
 }
+@media (max-width: 560px) {
+  .container__box2__choice__text1 {
+    width: 80%;
+  }
+}
 .container__box2__choice__text2 {
   font-family: "Barlow", sans-serif;
   text-align: center;
@@ -353,6 +386,11 @@ html {
   margin-left: auto;
   margin-right: auto;
   color: hsl(212, 27%, 19%);
+}
+@media (max-width: 560px) {
+  .container__box2__choice__text2 {
+    width: 80%;
+  }
 }
 .container__client {
   display: flex;
@@ -367,6 +405,14 @@ html {
   margin-top: 160px;
   margin-bottom: 160px;
 }
+@media (max-width: 560px) {
+  .container__client {
+    height: 1108px;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+    margin-top: 200px;
+  }
+}
 .container__client__title {
   position: absolute;
   margin-bottom: 440px;
@@ -378,12 +424,24 @@ html {
   text-transform: uppercase;
   color: hsl(232, 10%, 55%);
 }
+@media (max-width: 560px) {
+  .container__client__title {
+    margin-bottom: 1040px;
+  }
+}
 .container__client__pres {
   display: flex;
   flex-direction: column;
   max-width: 350px;
   width: 100%;
   height: 345px;
+}
+@media (max-width: 560px) {
+  .container__client__pres {
+    max-width: none;
+    width: 85%;
+    height: 220px;
+  }
 }
 .container__client__pres__picture {
   width: 72px;
@@ -457,6 +515,13 @@ html {
   height: -moz-fit-content;
   height: fit-content;
 }
+@media (max-width: 560px) {
+  .container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 751px;
+  }
+}
 .container__footer__img {
   width: 100%;
   height: 450px;
@@ -466,6 +531,12 @@ html {
   background-position: center;
   background-image: url("photos/image-gallery-milkbottles.jpg");
   grid-column: 1/3;
+}
+@media (max-width: 560px) {
+  .container__footer__img {
+    width: 50%;
+    height: 188px;
+  }
 }
 .container__footer__img2 {
   width: 100%;
@@ -477,6 +548,12 @@ html {
   grid-column: 3/5;
   background-image: url("photos/image-gallery-orange.jpg");
 }
+@media (max-width: 560px) {
+  .container__footer__img2 {
+    width: 50%;
+    height: 188px;
+  }
+}
 .container__footer__img3 {
   width: 100%;
   height: 450px;
@@ -486,6 +563,12 @@ html {
   background-position: center;
   grid-column: 5/7;
   background-image: url("photos/image-gallery-cone.jpg");
+}
+@media (max-width: 560px) {
+  .container__footer__img3 {
+    width: 50%;
+    height: 188px;
+  }
 }
 .container__footer__img4 {
   width: 100%;
@@ -497,6 +580,12 @@ html {
   grid-column: 7/9;
   background-image: url("photos/image-gallery-sugarcubes.jpg");
 }
+@media (max-width: 560px) {
+  .container__footer__img4 {
+    width: 50%;
+    height: 188px;
+  }
+}
 .container__footer__foot {
   display: flex;
   background-color: #90D4C6;
@@ -506,6 +595,12 @@ html {
   grid-row: 2;
   align-items: center;
   flex-direction: column;
+}
+@media (max-width: 560px) {
+  .container__footer__foot {
+    width: 100%;
+    height: 375px;
+  }
 }
 .container__footer__foot__title {
   max-width: 170px;
@@ -543,6 +638,11 @@ html {
 
 .container__nav__contain__button:hover {
   background-color: rgba(255, 255, 255, 0.2537);
+}
+@media (max-width: 560px) {
+  .container__nav__contain__button:hover {
+    background-color: transparent;
+  }
 }
 .container__nav__contain__button:hover .container__nav__contain__button__txt {
   color: hsl(0, 0%, 100%);
