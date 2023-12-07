@@ -67,6 +67,8 @@ html {
   margin-right: 0;
   background-color: hsl(0, 0%, 100%);
   border-radius: 28px;
+  cursor: pointer;
+  transition: 150ms linear;
 }
 @media (max-width: 560px) {
   .container__nav__contain__button {
@@ -370,6 +372,11 @@ html {
   margin-right: auto;
   color: hsl(168, 34%, 41%);
 }
+@media (max-width: 1024px) {
+  .container__box2__choice__text1 {
+    width: 70%;
+  }
+}
 @media (max-width: 560px) {
   .container__box2__choice__text1 {
     width: 80%;
@@ -386,6 +393,11 @@ html {
   margin-left: auto;
   margin-right: auto;
   color: hsl(212, 27%, 19%);
+}
+@media (max-width: 1024px) {
+  .container__box2__choice__text2 {
+    width: 70%;
+  }
 }
 @media (max-width: 560px) {
   .container__box2__choice__text2 {
@@ -628,6 +640,7 @@ html {
   font-weight: 600;
   line-height: 25px;
   flex-direction: row;
+  transition: 150ms linear;
 }
 .container__footer__foot__contact {
   display: flex;
@@ -662,16 +675,20 @@ html {
 
 .container__footer__foot__contact__fb:hover {
   filter: brightness(0) invert(2);
+  transition: 150ms linear;
 }
 
 .container__footer__foot__contact__insta:hover {
   filter: brightness(0) invert(2);
+  transition: 150ms linear;
 }
 
 .container__footer__foot__contact__twitter:hover {
   filter: brightness(0) invert(2);
+  transition: 150ms linear;
 }
 
 .container__footer__foot__contact__pin:hover {
   filter: brightness(0) invert(2);
+  transition: 150ms linear;
 }/*# sourceMappingURL=style.css.map */
