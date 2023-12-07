@@ -144,10 +144,40 @@ html {
   background-position: center;
   margin-top: 360.54px;
   position: absolute;
+  animation-name: arrow;
+  animation-duration: 1.5s;
+  animation-delay: 20ms;
+  animation-iteration-count: infinite;
+}
+@keyframes arrow {
+  0% {
+    margin-top: 360.54px;
+  }
+  50% {
+    margin-top: 380.54px;
+  }
+  100% {
+    margin-top: 360.54px;
+  }
 }
 @media (max-width: 560px) {
   .container__header__arrow {
     margin-top: 294px;
+    animation-name: arrow;
+    animation-duration: 1.5s;
+    animation-delay: 20ms;
+    animation-iteration-count: infinite;
+  }
+  @keyframes arrow {
+    0% {
+      margin-top: 294px;
+    }
+    50% {
+      margin-top: 314px;
+    }
+    100% {
+      margin-top: 294px;
+    }
   }
 }
 .container__box {
@@ -220,6 +250,7 @@ html {
   border-radius: 28px;
   position: absolute;
   cursor: pointer;
+  transition: 250ms linear;
 }
 .container__box__texta__learn__p {
   color: hsl(212, 27%, 19%);
@@ -296,6 +327,7 @@ html {
   margin-bottom: 0;
   border-radius: 28px;
   cursor: pointer;
+  transition: 250ms linear;
 }
 .container__boxe__textb__learn__p {
   color: hsl(212, 27%, 19%);

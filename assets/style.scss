@@ -269,9 +269,29 @@ html {
             background-position: center;
             margin-top: 360.54px;
             position: absolute;
+            animation-name: arrow;
+            animation-duration: 1.5s;
+            animation-delay: 20ms;
+            animation-iteration-count: infinite;
+
+            @keyframes arrow {
+                0% {margin-top: 360.54px;}
+                50% {margin-top: 380.54px;}
+                100% {margin-top: 360.54px;}
+            }
 
             @include mq-maxwidth($mobilesize) {
                 margin-top: 294px;
+                animation-name: arrow;
+                animation-duration: 1.5s;
+                animation-delay: 20ms;
+                animation-iteration-count: infinite;
+
+            @keyframes arrow {
+                0% {margin-top: 294px;}
+                50% {margin-top: 314px;}
+                100% {margin-top: 294px;}
+            }
             }
         }
     }
@@ -336,7 +356,7 @@ html {
                 border-radius: 28px;
                 position: absolute;
                 cursor: pointer;
-                
+                transition: 250ms linear;
 
                 &__p {
                     @include learnstyle();
@@ -403,6 +423,7 @@ html {
                 margin-bottom: 0;
                 border-radius: 28px;
                 cursor: pointer;
+                transition: 250ms linear;
 
                 &__p {
                     @include learnstyle();
